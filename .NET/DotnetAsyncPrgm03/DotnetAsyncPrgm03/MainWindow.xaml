@@ -1,0 +1,20 @@
+﻿<Window x:Class="DotnetAsyncPrgm03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DotnetAsyncPrgm03"
+        mc:Ignorable="d"
+        Title="Search Customers" Height="450" Width="800">
+    <StackPanel Margin="20">
+
+        <TextBlock Text="Въведете ID-та (разделени с интервал):" />
+        <TextBox x:Name="IdsBox" Text="1 3 5" Margin="0,5,0,10"/>
+
+        <Button x:Name="ButtonSearch" Content="Търси клиенти" 
+                Width="150" Height="35" Click="ButtonSearch_Click" />
+
+        <TextBlock Text="Списък с клиенти:" FontWeight="Bold" Margin="0,15,0,5"/>
+        <ListBox x:Name="ResultList" Height="180"/>
+    </StackPanel>
+</Window>
